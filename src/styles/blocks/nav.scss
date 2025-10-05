@@ -8,7 +8,7 @@
     flex-direction: column;
     gap: 32px;
 
-    @include onTablet {
+    @include on-tablet {
       margin-top: 56px;
     }
   }
@@ -23,7 +23,7 @@
     color: inherit;
 
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       bottom: -4px;
       display: block;

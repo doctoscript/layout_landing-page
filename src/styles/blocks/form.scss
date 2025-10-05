@@ -3,7 +3,6 @@
   flex-direction: column;
   gap: 16px;
 
-
   &__input {
     box-sizing: border-box;
     width: 100%;
@@ -19,10 +18,10 @@
     font-size: 14px;
     letter-spacing: 0.15px;
 
-    @include hover(border, (1px solid #DBDBDB));
+    @include hover-effect(border, (1px solid #dbdbdb));
 
     &::placeholder {
-      color:#7E7E83;
+      color: #7e7e83;
     }
 
     &:focus {

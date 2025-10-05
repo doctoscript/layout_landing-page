@@ -5,18 +5,18 @@
   justify-content: space-between;
   align-items: center;
 
-  @include onTablet {
-    padding-block: 32px
+  @include on-tablet {
+    padding-block: 32px;
   }
 
   &__logo {
     height: 16px;
 
-    @include onTablet {
+    @include on-tablet {
       height: 24px;
     }
 
-    @include hover(transform, scale(1.2));
+    @include hover-effect(transform, scale(1.2));
   }
 
   &__logo-link {

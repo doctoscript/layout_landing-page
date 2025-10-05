@@ -9,7 +9,8 @@
   &__body {
     margin: 0;
     min-width: 320px;
-    outline: 1px solid red;
+    
+    // outline: 1px solid red;
   }
 
   &__menu {
@@ -31,6 +32,6 @@
   }
 
   &:has(.page__menu:target) {
-      overflow: hidden; /* not to scroll the page */
+    overflow: hidden; /* not to scroll the page */
   }
 }

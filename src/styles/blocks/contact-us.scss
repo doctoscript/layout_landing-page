@@ -1,12 +1,11 @@
 .contact-us {
   &__wrapper {
-    @include pageGrid;
+    @include page-grid;
   }
 
   &__form {
     grid-column: 1 / span 6;
   }
-
 
   &__info {
     margin-top: 48px;
@@ -17,11 +16,11 @@
     align-items: start;
     gap: 24px;
 
-    @include onTablet {
+    @include on-tablet {
       margin-top: 80px;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       margin-top: 0;
       margin-bottom: 110px;
       grid-column: 8 / span 5;
@@ -41,7 +40,7 @@
       font-size: 14px;
       letter-spacing: 0.15px;
 
-      color: #9393A3;
+      color: #9393a3;
     }
 
     &__link {
@@ -50,8 +49,8 @@
       text-decoration: none;
 
       color: #191919;
-      
-      @include hover(color, $main-orange);
+
+      @include hover-effect(color, $main-orange);
     }
   }
 }

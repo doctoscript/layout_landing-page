@@ -10,7 +10,7 @@
   text-align: center;
   text-decoration: none;
 
-  color: #FFF;
+  color: #fff;
   border: none;
   background-color: $main-orange;
   border-radius: 8px;
@@ -18,13 +18,13 @@
 
   cursor: pointer;
 
-  @include hover(background-color, $main-dark-blue);
+  @include hover-effect(background-color, $main-dark-blue);
 
   &--active {
     background-color: $main-button-active-color;
   }
 
-  @include onDesktop {
+  @include on-desktop {
     width: 33.33%;
   }
 
@@ -33,7 +33,7 @@
 
     margin-top: 16px;
 
-    @include onDesktop {
+    @include on-desktop {
       width: 100%;
       grid-column: 1 / span 6;
     }

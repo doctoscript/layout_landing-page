@@ -4,21 +4,21 @@
   display: block;
   background-size: cover;
 
-  @include hover(transform, scale(1.2));
+  @include hover-effect(transform, scale(1.2));
 
-  @include onTablet {
+  @include on-tablet {
     height: 32px;
     width: 32px;
   }
 
-   &--phone {
+  &--phone {
     background-image: url(../images/icons/icon-phone.svg);
 
-    @include onDesktop {
+    @include on-desktop {
       position: relative;
 
       &::after {
-        content: "+1 234 5555-55-55";
+        content: '+1 234 5555-55-55';
         position: absolute;
         top: 50%;
         left: 0;

@@ -3,14 +3,14 @@
     display: grid;
     row-gap: 40px;
 
-    @include onTablet {
+    @include on-tablet {
       row-gap: 56px;
     }
   }
 
   .category {
     &__photos {
-      @include pageGrid;
+      @include page-grid;
 
       margin-bottom: 16px;
     }
@@ -20,13 +20,13 @@
       height: 0;
       padding-bottom: 100%;
 
-      @include onTablet {
+      @include on-tablet {
         height: auto;
         padding-bottom: 0;
         grid-column: span 3;
       }
 
-      @include onDesktop {
+      @include on-desktop {
         grid-column: span 6;
       }
     }
@@ -37,9 +37,9 @@
       height: 100%;
       object-fit: cover;
 
-      @include hover(transform, scale(1.05));
+      @include hover-effect(transform, scale(1.05));
 
-      @include onTablet {
+      @include on-tablet {
         position: static;
         width: 100%;
         height: auto;
@@ -52,10 +52,9 @@
       font-size: 24px;
       letter-spacing: 0;
 
-      @include onTablet {
+      @include on-tablet {
         font-size: 24px;
       }
     }
-
   }
 }
