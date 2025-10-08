@@ -39,7 +39,6 @@
 @mixin page-grid {
   --columns: 2;
 
-  /* Виправлення 3: Додано порожній рядок перед декларацією */
   display: grid;
   column-gap: 20px;
   grid-template-columns: repeat(var(--columns), 1fr);
